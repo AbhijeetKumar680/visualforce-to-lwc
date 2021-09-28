@@ -1,5 +1,6 @@
 <apex:page standardController="Account">
     <apex:pageBlock title="Account Details">
+    <apex:form>
         <apex:pageBlockSection title="Account fields">
             <apex:outputField value="{!Account.Name}" />
             <apex:outputField value="{!Account.Type}" />
@@ -9,5 +10,6 @@
                 value="{!Account.Owner.Name}"
             />
         </apex:pageBlockSection>
+        </apex:form>
     </apex:pageBlock>
 </apex:page>
